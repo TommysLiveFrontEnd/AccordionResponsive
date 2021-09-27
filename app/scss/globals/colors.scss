@@ -1,4 +1,20 @@
 :root {
 	--white: hsl(0, 0%, 100%);
 	--black: hsl(0, 0%, 0%);
+	--darkGray: hsl(0, 0%, 63%);
+	--veryDarkGray: hsl(0, 0%, 27%);
+
+	//text 
+	--verydarkdesaturatedblue: hsl(238, 29%, 16%);
+	--softorange: hsl(14, 88%, 65%);
+
+	--verydarkgrayishblue: hsl(237, 12%, 33%);
+	--darkgrayishblue: hsl(240, 6%, 50%);
+
+	//background gradient
+	--softviolet: hsl(273, 75%, 66%);
+    --softblue: hsl(240, 73%, 65%);
+
+	//dividers
+	--lightgrayishblue: hsl(240, 5%, 91%);
 }

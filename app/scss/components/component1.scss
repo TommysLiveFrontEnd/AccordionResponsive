@@ -1,1 +1,46 @@
 @use '../util' as *;
+
+
+.container {
+    padding-left: rem(30) !important;
+    padding-right: rem(30) !important;
+}
+
+.a-card {
+    background: var(--white);
+    border-radius: rem(32);
+    width: 100%;
+}
+
+.illustration {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding-right: rem(30);
+    max-height: rem(120);
+
+
+    &__img {
+        max-height: rem(200);
+        position: relative;
+        transform: translateY(rem(-100));  
+    }
+
+    &__shadow {
+        max-height: rem(220);
+        position: relative;
+        transform: translateY(rem(-190));
+        left: rem(15);
+    }
+
+}
+
+.accordion {
+    position: relative;
+
+
+    &__fqa {
+       
+
+    }
+}
