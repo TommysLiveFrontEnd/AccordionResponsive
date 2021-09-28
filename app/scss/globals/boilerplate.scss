@@ -3,6 +3,7 @@
 html {
 	font-size: 100%;
 	box-sizing: border-box;
+	overflow-x: scroll;
 }
 
 *,
@@ -13,9 +14,11 @@ html {
 
 body {
 	font-family: var(--font-body);
+	color: var(--verydarkdesaturatedblue);
 	background-repeat: no-repeat;
 	@include breakpoint-down(xsmall) {
 		background-image: linear-gradient(var(--softviolet), var(--softblue));
+		contain: content;
 	}
 	background-image: linear-gradient(to bottom right, var(--softviolet), var(--softblue));
 	font-size: rem(13);

@@ -1,6 +1,46 @@
 @use '../util' as *;
 
 
+
+
+// mobile media q for 320px 
+@include breakpoint-down(xxxsmall) {
+
+    .illustration {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        padding-right: rem(30);
+        max-height: rem(120);
+    
+    
+        &__img {
+            max-height: rem(165);
+            position: relative;
+            transform: translateY(rem(-100));  
+        }
+    
+        &__shadow {
+            max-height: rem(220);
+            position: relative;
+            transform: translateY(rem(-190));
+            left: rem(15);
+        }
+    
+    }
+
+}
+
+
+
+
+
+
+
+
+
+// mobile 320px - large mobile 420px global styles. 
+
 .container {
     padding-left: rem(30) !important;
     padding-right: rem(30) !important;
@@ -35,12 +75,78 @@
 
 }
 
+.faq-container h1{
+    margin-top: rem(8);
+    margin-bottom: rem(8);
+    font-size: rem(35);
+    font-weight: 700;
+    text-align: center;
+}
+
 .accordion {
     position: relative;
+    padding: rem(5) rem(25) rem(25) rem(25);
+
+}
+
+.accordion__item {
+    padding-top: rem(8);
+    border-bottom: rem(1) solid var(--lightgrayishblue);
+}
+
+.accordion__item h2 {
+    margin-bottom: 0 !important;
+}
 
 
-    &__fqa {
-       
+// accordian styles global mobile - desktop 
 
-    }
+.accordion__question {
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin-bottom: rem(8);
+    font-size: rem(15);
+    font-family: var(--font-body);
+    color: var(--verydarkdesaturatedblue);
+}
+
+.accordion__question::after{
+    float: right;
+    content: '';
+    width: rem(10);
+    height: rem(10);
+    background-image: url(/images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform .2s ease-in-out;
+}
+
+
+.accordion__collapse:not(.show) {
+    display: none;
+}
+
+.accordion__answer {
+    font-size: rem(13);
+    font-family: var(--font-body);
+    line-height: rem(22);
+    color: var(--verydarkgrayishblue);
+    margin-bottom: rem(16);
+
+}
+
+.accordion__question:not(.collapsed)::after {
+    transform: rotate(-180deg);
+    position: static;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.accordion__question:not(.collapsed) {
+    font-weight: bold;
+    color: var(--softorange);
 }

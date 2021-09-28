@@ -33,29 +33,74 @@
         <img class="illustration__img" alt="woman working on a desktop" src="/images/illustration-woman-online-mobile.svg">
         <img class="illustration__shadow" alt="background shadow for illustration" src="images/bg-pattern-mobile.svg">
       </div>
-      <div class="fqa-container">
-        <h1>FQA</h1>
-
-        <div class="accordian">
-          How many team members can I invite? 
-          You can invite up to 2 additional users on the Free plan. 
-          There is no limit on team members for the Premium plan. 
-          What is the maximum file upload size? No more than 2GB. All files in your account must fit your allotted storage space. 
-          How do I reset my password? 
-          Click “Forgot password” from the login page or “Change password” from your profile page. 
-          A reset link will be emailed to you. 
-          Can I cancel my subscription? Yes! 
-          send us a message and we’ll process your request no questions asked. 
-          Do you provide additional support? Chat and email support is available 24/7.
-          Phone lines are open during normal business hours
-        </div>
-      </div>
-
-
-    
-
+      <article class="faq-container">
+        <h1>FAQ</h1>
+        <div class="accordion" id="accordion">
+          <div class="accordion__item">
+            <h2 id="headingOne">
+              <button class="accordion__question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <p>How many team members can I invite?</p>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion__collapse" aria-labelledby="headingOne" data-bs-parent="accordion">
+              <div class="accordion__answer">
+                You can invite up to 2 additional users on the Free plan. 
+                <em>There's no limit on the Premium plan.</em>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h2 id="headingTwo">
+              <button class="accordion__question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+                <p>What is the maximum file upload size?</p>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion__collapse" aria-labelledby="headingThree" data-bs-parent="accordion">
+              <div class="accordion__answer">
+                No more than 2GB. All files in your account must fit your allotted storage space.
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h2 id="headingThree">
+              <button class="accordion__question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+                <p>How do I reset my password?</p>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion__collapse" aria-labelledby="headingThree" data-bs-parent="accordion">
+              <div class="accordion__answer">
+                Click “Forgot password” from the login page or “Change password” from your profile page. 
+                A reset link will be emailed to you. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h2 id="headingFour">
+              <button class="accordion__question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
+                <p>Can I cancel my subscription?</p>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion__collapse" aria-labelledby="headingFour" data-bs-parent="accordion">
+              <div class="accordion__answer">
+                Yes! send us a message and we’ll process your request no questions asked. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h2 id="headingFive">
+              <button class="accordion__question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseOne">
+                <p>Do you provide additional support?</p>
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion__collapse" aria-labelledby="headingFive" data-bs-parent="accordion">
+              <div class="accordion__answer">
+                Chat and email support is available 24/7.
+                Phone lines are open during normal business hours
+              </div>
+            </div>
+          </div>
+      </article>
     </section>
-
   </main>
   
 
