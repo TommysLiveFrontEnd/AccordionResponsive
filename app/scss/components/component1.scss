@@ -3,43 +3,34 @@
 
 
 
-// mobile media q for 320px 
-@include breakpoint-down(xxxsmall) {
+// mobile media q for 320px - 375px
+@include breakpoint-down(xxsmall) {
 
-    .illustration {
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-        padding-right: rem(30);
-        max-height: rem(120);
+    .illustration__img { 
+        max-height: rem(165) !important;
+        position: relative;
+        transform: translateY(rem(-85)) !important;  
+    }
     
-    
-        &__img {
-            max-height: rem(165);
-            position: relative;
-            transform: translateY(rem(-100));  
-        }
-    
-        &__shadow {
-            max-height: rem(220);
-            position: relative;
-            transform: translateY(rem(-190));
-            left: rem(15);
-        }
-    
+    .illustration__shadow {
+        max-width: rem(200) !important;
+        position: relative;
+        transform: translateY(rem(-164)) !important;
+        left: rem(12) !important;
     }
 
+    p {
+        font-size: rem(13);
+    }
+
+    .accordion__answer {
+        font: small-caption;
+        font-size: rem(12) !important;
+    }
 }
 
 
-
-
-
-
-
-
-
-// mobile 320px - large mobile 420px global styles. 
+// mobile 320px - large mobile 425px global styles. 
 
 .container {
     padding-left: rem(30) !important;
@@ -123,11 +114,6 @@
     transition: transform .2s ease-in-out;
 }
 
-
-.accordion__collapse:not(.show) {
-    display: none;
-}
-
 .accordion__answer {
     font-size: rem(13);
     font-family: var(--font-body);
@@ -135,6 +121,10 @@
     color: var(--verydarkgrayishblue);
     margin-bottom: rem(16);
 
+}
+
+.accordion__collapse:not(.show) {
+    display: none;
 }
 
 .accordion__question:not(.collapsed)::after {
