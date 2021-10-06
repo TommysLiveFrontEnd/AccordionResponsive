@@ -29,6 +29,13 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 220vh;
+	@include breakpoint-down(medium) {
+		height: 130vh !important;
+	}
+
+	@include breakpoint(large) {
+		height: 100vh !important;
+	}
 }
 
 

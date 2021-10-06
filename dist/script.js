@@ -1,2 +1,2 @@
-"use strict";console.log("HELLO");var test=function(){console.log("this is a test")};
+"use strict";console.log("HELLO");var i,test=function(){console.log("this is a test")},acc=document.getElementsByClassName("accordion__question");function click_action(){$(".accordion__question.collapsed").removeClass("active"),$(".accordion__collapse").removeClass("show"),this.classList.toggle("active"),this.nextElementSibling.classList.toggle("show")}for(i=0;i<acc.length;i++)acc[i].onclick=click_action;
 //# sourceMappingURL=script.js.map
